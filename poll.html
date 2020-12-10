@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Chart.js</title>
+    <meta name="description" content="poll-chart">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="poll.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternomaly/1.3.2/patternomaly.js" defer></script>
+    <script src="poll.js" defer></script> 
+
+</head>
+
+
+<body>
+    <!--
+    <h1 id="myTitle">
+        Mixed Chart in Chart.js
+    </h1>
+
+
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="myChart"></canvas>
+    </div>
+    -->
+
+    <h1>Poll Results with Chart.js</h1>
+
+    <div class="chart-container">
+        <canvas id="chart"></canvas> 
+    </div>
+
+    <form id="pollForm">
+    <div class="poll">
+        <div class="poll-heading">
+        <h3 class="poll-title">Favorite programming language</h3>
+        </div>
+        <div class="poll-body">
+        <ul>
+            <li>
+            <label><input type="radio" name="pollOptions" value="Python"><span>Python</span></label>
+            </li>
+            <li>
+            <label><input type="radio" name="pollOptions" value="Go"><span>Go</span></label>
+            </li>
+            <li>
+            <label><input type="radio" name="pollOptions" value="Java"><span>Java</span></label>
+            </li>
+            <li>
+            <label><input type="radio" name="pollOptions" value="C++"><span>C++</span></label>
+            </li>
+            <li>
+            <label><input type="radio" name="pollOptions" value="C"><span>C</span></label>
+            </li>
+            <li>
+            <label><input type="radio" name="pollOptions" value="Rust"><span>Rust</span></label>
+            </li>
+            <li>
+            <label><input type="radio" name="pollOptions" value="Swift"><span>Swift</span></label>
+            </li>
+        </ul>
+        </div>
+        <div class="poll-footer">
+        <button type="submit">Vote</button>
+        </div>
+    </div>
+    </form>
+
+</body>
+</html>
